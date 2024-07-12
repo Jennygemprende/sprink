@@ -1,0 +1,24 @@
+.sprite {
+    position: fixed;/*fijado*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*permitirán trasladar, escalar, rotar o torcer a lo largo, ancho y profundidad del elemento.*/
+    background-image: url("images/sprite.png");
+    width: 256px;
+    height: 256px;
+   background-position: -0 0px;
+   animation: correr 0.5s steps(6) infinite ; /* steps pasos*/
+}
+
+
+@keyframes  correr {/*controlar los pasos intermedios en una secuencia de animación*/
+
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -1536px;
+    }
+    
+}
+
